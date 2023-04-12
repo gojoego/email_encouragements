@@ -1,0 +1,22 @@
+<%= form_tag root_path, class: "send-email" do %>
+  <%= submit_tag "Click to Send Email", style: "margin: 10px; padding: 10px" %>
+<% end %>
+
+<script>
+document.querySelector(".send-email").onsubmit = function(e) {
+  e.preventDefault()
+
+  fetch(e.target.action, {
+    method: "POST",
+    headers: {
+      "X-CSRF-Token": document.querySelector('meta[name="csrf-token"]').content
+    }
+  }).then(function(response) {
+    if (response.ok) {
+      window.open('/mail', '_blank')
+    } else {
+      console.error(response)
+    }
+  });
+}
+</script>

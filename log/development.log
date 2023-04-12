@@ -1,0 +1,458 @@
+Started GET "/mail" for 127.0.0.1 at 2023-04-04 02:22:20 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 35)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 2.1ms | Allocations: 1345)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.4ms | Allocations: 105)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 2.5ms | Allocations: 638)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.2ms | Allocations: 1447)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.6ms | Allocations: 1923)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.2ms | Allocations: 321)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.8ms | Allocations: 2819)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 12.4ms | Allocations: 10409)
+Completed 200 OK in 24ms (Views: 15.5ms | ActiveRecord: 0.0ms | Allocations: 15831)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-04 02:22:26 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 150.4ms | Allocations: 92423)
+Completed 200 OK in 152ms (Views: 151.9ms | ActiveRecord: 0.0ms | Allocations: 93257)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:22:28 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms | Allocations: 16767)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:22:29 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4476)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:22:32 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4365)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:24:46 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 14608)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:24:47 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 4477)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started GET "/" for 127.0.0.1 at 2023-04-04 02:25:26 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1324)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 36216)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.0ms | Allocations: 38784)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:25:28 -0500
+Processing by RootController#create as */*
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 13168)
+
+
+  
+NoMethodError (undefined method `send_email' for EmailMailer:Class):
+  
+app/controllers/root_controller.rb:3:in `create'
+Started GET "/" for 127.0.0.1 at 2023-04-04 02:27:14 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1336)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 36279)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 38847)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-04 02:27:17 -0500
+Processing by RootController#create as */*
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 6cb1a157-76be-433b-a926-73c33b53eb50) to Async(default) with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms | Allocations: 9959)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-04 02:27:17 -0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [6cb1a157-76be-433b-a926-73c33b53eb50] Performing ActionMailer::MailDeliveryJob (Job ID: 6cb1a157-76be-433b-a926-73c33b53eb50) from Async(default) enqueued at 2023-04-04T07:27:17Z with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [6cb1a157-76be-433b-a926-73c33b53eb50] EmailMailer#send_email: processed outbound mail in 2.4ms
+Processing by RootController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 512)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [6cb1a157-76be-433b-a926-73c33b53eb50] Delivered mail 642bd155222e5_32215820-42f@gojoego.local.mail (23.2ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [6cb1a157-76be-433b-a926-73c33b53eb50] Date: Tue, 04 Apr 2023 02:27:17 -0500
+From: from@example.com
+To: support@fly.io
+Message-ID: <642bd155222e5_32215820-42f@gojoego.local.mail>
+Subject: working at Fly.io
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I would love to work at Fly.io
+[ActiveJob] [ActionMailer::MailDeliveryJob] [6cb1a157-76be-433b-a926-73c33b53eb50] Performed ActionMailer::MailDeliveryJob (Job ID: 6cb1a157-76be-433b-a926-73c33b53eb50) from Async(default) in 31.74ms
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3127)
+Completed 200 OK in 13ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 4420)
+
+
+Started GET "/mail" for 127.0.0.1 at 2023-04-04 02:27:17 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.4ms | Allocations: 2014)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 31)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 2.5ms | Allocations: 3109)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 2.3ms | Allocations: 638)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.2ms | Allocations: 166)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 3.5ms | Allocations: 1437)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.7ms | Allocations: 1918)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.2ms | Allocations: 321)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.4ms | Allocations: 2814)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 9.8ms | Allocations: 8268)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 9438)
+
+
+Started GET "/mail/1680593237_142709_a307246/plain" for 127.0.0.1 at 2023-04-04 02:27:17 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1680593237_142709_a307246", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 14)
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 852)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:01:36 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 5099)
+  Rendered layout layouts/application.html.erb (Duration: 143.9ms | Allocations: 97496)
+Completed 200 OK in 150ms (Views: 146.6ms | ActiveRecord: 0.0ms | Allocations: 100994)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-12 14:01:37 -0500
+Processing by RootController#create as */*
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 06735207-6e41-486b-b72f-2bd6a3a0057f) to Async(default) with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 34ms (ActiveRecord: 0.0ms | Allocations: 13654)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:01:38 -0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [06735207-6e41-486b-b72f-2bd6a3a0057f] Performing ActionMailer::MailDeliveryJob (Job ID: 06735207-6e41-486b-b72f-2bd6a3a0057f) from Async(default) enqueued at 2023-04-12T19:01:38Z with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [06735207-6e41-486b-b72f-2bd6a3a0057f] EmailMailer#send_email: processed outbound mail in 2.2ms
+Processing by RootController#index as */*
+[ActiveJob] [ActionMailer::MailDeliveryJob] [06735207-6e41-486b-b72f-2bd6a3a0057f] Delivered mail 64370012bd5c_a9db5848621@gojoego.local.mail (283.9ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [06735207-6e41-486b-b72f-2bd6a3a0057f] Date: Wed, 12 Apr 2023 14:01:38 -0500
+From: josephjgallego@gmail.com
+To: support@fly.io
+Message-ID: <64370012bd5c_a9db5848621@gojoego.local.mail>
+Subject: working at Fly
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I would love to work at Fly
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+[ActiveJob] [ActionMailer::MailDeliveryJob] [06735207-6e41-486b-b72f-2bd6a3a0057f] Performed ActionMailer::MailDeliveryJob (Job ID: 06735207-6e41-486b-b72f-2bd6a3a0057f) from Async(default) in 290.68ms
+  Rendered root/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 597)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2889)
+Completed 200 OK in 9ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 3567)
+
+
+Started GET "/mail" for 127.0.0.1 at 2023-04-12 14:01:38 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.3ms | Allocations: 2002)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 1.0ms | Allocations: 1742)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 3.7ms | Allocations: 4808)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 3.7ms | Allocations: 638)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.4ms | Allocations: 166)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 5.7ms | Allocations: 1437)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 2.4ms | Allocations: 1918)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.3ms | Allocations: 321)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 3.9ms | Allocations: 2814)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 14.9ms | Allocations: 9967)
+Completed 200 OK in 19ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 11475)
+
+
+Started GET "/mail/1681326098_0510569_ed3f153/plain" for 127.0.0.1 at 2023-04-12 14:01:38 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326098_0510569_ed3f153", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 14)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 840)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:12:52 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1335)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 36401)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.0ms | Allocations: 38969)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-12 14:12:53 -0500
+Processing by RootController#create as */*
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: e0278829-de81-4ca8-9a23-74272027f41f) to Async(default) with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 26ms (ActiveRecord: 0.0ms | Allocations: 9912)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:12:53 -0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [e0278829-de81-4ca8-9a23-74272027f41f] Performing ActionMailer::MailDeliveryJob (Job ID: e0278829-de81-4ca8-9a23-74272027f41f) from Async(default) enqueued at 2023-04-12T19:12:53Z with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [e0278829-de81-4ca8-9a23-74272027f41f] EmailMailer#send_email: processed outbound mail in 1.0ms
+Processing by RootController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 532)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [e0278829-de81-4ca8-9a23-74272027f41f] Delivered mail 643702b56de59_aa4058487168c@gojoego.local.mail (10.4ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [e0278829-de81-4ca8-9a23-74272027f41f] Date: Wed, 12 Apr 2023 14:12:53 -0500
+From: youremail@whatever.com
+To: support@fly.io
+Message-ID: <643702b56de59_aa4058487168c@gojoego.local.mail>
+Subject: working at Fly
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+I would love to work at Fly
+[ActiveJob] [ActionMailer::MailDeliveryJob] [e0278829-de81-4ca8-9a23-74272027f41f] Performed ActionMailer::MailDeliveryJob (Job ID: e0278829-de81-4ca8-9a23-74272027f41f) from Async(default) in 13.49ms
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 3079)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 3642)
+
+
+Started GET "/mail" for 127.0.0.1 at 2023-04-12 14:12:53 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.0ms | Allocations: 2002)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [2 times] (Duration: 1.6ms | Allocations: 3226)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 3.7ms | Allocations: 6293)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 2.6ms | Allocations: 638)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.5ms | Allocations: 1437)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.9ms | Allocations: 1918)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.3ms | Allocations: 321)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.8ms | Allocations: 2814)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 12.5ms | Allocations: 11476)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 12661)
+
+
+Started GET "/mail/1681326773_451604_d091638/plain" for 127.0.0.1 at 2023-04-12 14:12:53 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326773_451604_d091638", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.2ms | Allocations: 14)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 772)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:13:18 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1338)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 36004)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 38572)
+
+
+Started POST "/" for 127.0.0.1 at 2023-04-12 14:13:19 -0500
+Processing by RootController#create as */*
+[ActiveJob] Enqueued ActionMailer::MailDeliveryJob (Job ID: 3a0c6f0c-20cb-42a3-93a4-1da68a053773) to Async(default) with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 23ms (ActiveRecord: 0.0ms | Allocations: 9933)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:13:20 -0500
+[ActiveJob] [ActionMailer::MailDeliveryJob] [3a0c6f0c-20cb-42a3-93a4-1da68a053773] Performing ActionMailer::MailDeliveryJob (Job ID: 3a0c6f0c-20cb-42a3-93a4-1da68a053773) from Async(default) enqueued at 2023-04-12T19:13:19Z with arguments: "EmailMailer", "send_email", "deliver_now", {:args=>[]}
+[ActiveJob] [ActionMailer::MailDeliveryJob] [3a0c6f0c-20cb-42a3-93a4-1da68a053773] EmailMailer#send_email: processed outbound mail in 1.3ms
+[ActiveJob] [ActionMailer::MailDeliveryJob] [3a0c6f0c-20cb-42a3-93a4-1da68a053773] Delivered mail 643702d0334f_aa6a584826692@gojoego.local.mail (9.7ms)
+[ActiveJob] [ActionMailer::MailDeliveryJob] [3a0c6f0c-20cb-42a3-93a4-1da68a053773] Date: Wed, 12 Apr 2023 14:13:20 -0500
+From: youremail@whatever.com
+To: you@yourwebsite.com
+Message-ID: <643702d0334f_aa6a584826692@gojoego.local.mail>
+Subject: keep your head up
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+life is hard but you got this - keep coding and keep going!
+[ActiveJob] [ActionMailer::MailDeliveryJob] [3a0c6f0c-20cb-42a3-93a4-1da68a053773] Performed ActionMailer::MailDeliveryJob (Job ID: 3a0c6f0c-20cb-42a3-93a4-1da68a053773) from Async(default) in 13.51ms
+Processing by RootController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 538)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2830)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 3154)
+
+
+Started GET "/mail" for 127.0.0.1 at 2023-04-12 14:13:20 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.1ms | Allocations: 2002)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [3 times] (Duration: 2.3ms | Allocations: 4710)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 4.7ms | Allocations: 7777)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 2.8ms | Allocations: 638)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 4.5ms | Allocations: 1437)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 1.8ms | Allocations: 1918)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.4ms | Allocations: 321)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 2.8ms | Allocations: 2814)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 13.4ms | Allocations: 12927)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 14118)
+
+
+Started GET "/mail/1681326800_014566_6dcb28c/plain" for 127.0.0.1 at 2023-04-12 14:13:20 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326800_014566_6dcb28c", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 14)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 772)
+
+
+Started POST "/mail/1681326773_451604_d091638/delete" for 127.0.0.1 at 2023-04-12 14:13:24 -0500
+Processing by LetterOpenerWeb::LettersController#destroy as JS
+  Parameters: {"id"=>"1681326773_451604_d091638"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 995)
+
+
+Started GET "/mail/" for 127.0.0.1 at 2023-04-12 14:13:24 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.1ms | Allocations: 1578)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [2 times] (Duration: 1.6ms | Allocations: 2982)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 3.3ms | Allocations: 5019)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.4ms | Allocations: 191)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 4.7ms | Allocations: 5789)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 6083)
+
+
+Started GET "/mail/1681326800_014566_6dcb28c/plain" for 127.0.0.1 at 2023-04-12 14:13:24 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326800_014566_6dcb28c", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 555)
+
+
+Started POST "/mail/1681326098_0510569_ed3f153/delete" for 127.0.0.1 at 2023-04-12 14:13:27 -0500
+Processing by LetterOpenerWeb::LettersController#destroy as JS
+  Parameters: {"id"=>"1681326098_0510569_ed3f153"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 808)
+
+
+Started GET "/mail/" for 127.0.0.1 at 2023-04-12 14:13:27 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 0.8ms | Allocations: 1493)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [1 times] (Duration: 1.1ms | Allocations: 1495)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 2.5ms | Allocations: 3411)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 4.0ms | Allocations: 4195)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 4458)
+
+
+Started GET "/mail/1681326800_014566_6dcb28c/plain" for 127.0.0.1 at 2023-04-12 14:13:27 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326800_014566_6dcb28c", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 555)
+
+
+Started POST "/mail/1680593237_142709_a307246/delete" for 127.0.0.1 at 2023-04-12 14:13:30 -0500
+Processing by LetterOpenerWeb::LettersController#destroy as JS
+  Parameters: {"id"=>"1680593237_142709_a307246"}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 787)
+
+
+Started GET "/mail/" for 127.0.0.1 at 2023-04-12 14:13:30 -0500
+Processing by LetterOpenerWeb::LettersController#index as HTML
+  Rendering layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb
+  Rendering /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb (Duration: 1.1ms | Allocations: 1493)
+  Rendered collection of /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/_item.html.erb [0 times] (Duration: 0.0ms | Allocations: 17)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/letter_opener_web/letters/index.html.erb within layouts/letter_opener_web/letters (Duration: 1.6ms | Allocations: 1930)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_icon.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_bootstrap.html.erb (Duration: 0.1ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/styles/_letters.html.erb (Duration: 0.0ms | Allocations: 8)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_styles.html.erb (Duration: 0.3ms | Allocations: 191)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_jquery.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/js/_favcount.html.erb (Duration: 0.0ms | Allocations: 10)
+  Rendered /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/_javascripts.html.erb (Duration: 0.2ms | Allocations: 140)
+  Rendered layout /Users/gojoego/.rbenv/versions/3.1.0/lib/ruby/gems/3.1.0/gems/letter_opener_web-2.0.0/app/views/layouts/letter_opener_web/letters.html.erb (Duration: 2.8ms | Allocations: 2708)
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2965)
+
+
+Started GET "/mail/1681326800_014566_6dcb28c/plain" for 127.0.0.1 at 2023-04-12 14:13:30 -0500
+Processing by LetterOpenerWeb::LettersController#show as HTML
+  Parameters: {"id"=>"1681326800_014566_6dcb28c", "style"=>"plain"}
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 554)
+
+
+Started GET "/" for 127.0.0.1 at 2023-04-12 14:37:54 -0500
+Processing by RootController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering root/index.html.erb within layouts/application
+  Rendered root/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 433)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2724)
+Completed 200 OK in 5ms (Views: 4.2ms | Allocations: 2981)
+
+
