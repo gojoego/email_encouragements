@@ -1,0 +1,15 @@
+# Rails
+/log/*
+/tmp/*
+/storage/*
+/public/assets/*
+/node_modules/
+/.bundle/
+/vendor/bundle
+.byebug_history
+.DS_Store
+
+# Credentials
+config/master.key
+.env
+.env.*
