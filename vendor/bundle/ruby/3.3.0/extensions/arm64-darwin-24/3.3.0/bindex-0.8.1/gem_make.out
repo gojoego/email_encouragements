@@ -1,0 +1,18 @@
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/gojoego/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-7c6jbu sitelibdir\=./.gem.20250918-4474-7c6jbu clean
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-7c6jbu sitelibdir\=./.gem.20250918-4474-7c6jbu
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-7c6jbu sitelibdir\=./.gem.20250918-4474-7c6jbu install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20250918-4474-7c6jbu/skiptrace/internal
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-7c6jbu sitelibdir\=./.gem.20250918-4474-7c6jbu clean

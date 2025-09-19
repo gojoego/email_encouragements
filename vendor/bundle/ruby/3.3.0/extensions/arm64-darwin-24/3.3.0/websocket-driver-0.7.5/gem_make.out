@@ -1,0 +1,18 @@
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/Users/gojoego/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-s9eixw sitelibdir\=./.gem.20250918-4474-s9eixw clean
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-s9eixw sitelibdir\=./.gem.20250918-4474-s9eixw
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-s9eixw sitelibdir\=./.gem.20250918-4474-s9eixw install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20250918-4474-s9eixw
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-s9eixw sitelibdir\=./.gem.20250918-4474-s9eixw clean

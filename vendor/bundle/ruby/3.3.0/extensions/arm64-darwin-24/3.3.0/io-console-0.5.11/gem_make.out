@@ -1,0 +1,431 @@
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
+/Users/gojoego/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 clean
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3
+compiling console.c
+console.c:283:23: warning: 'tied_io_for_writing' is deprecated: rb_io_get_write_io [-Wdeprecated-declarations]
+  283 |     VALUE wio = fptr->tied_io_for_writing;
+      |                       ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:192:5: note: 'tied_io_for_writing' has been explicitly marked deprecated here
+  192 |     RBIMPL_ATTR_DEPRECATED(("rb_io_get_write_io"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:285:28: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  285 |     if (!wio) return fptr->fd;
+      |                            ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:287:19: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  287 |     return ofptr->fd;
+      |                   ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:304:13: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  304 |     fd[0] = GetReadFD(fptr);
+      |             ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:328:33: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  328 |     if (fd[0] != -1 && fd[0] == GetReadFD(fptr)) {
+      |                                 ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:425:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  425 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:426:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  426 |     if (!getattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:428:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  428 |     if (!setattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:468:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  468 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:469:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  469 |     if (!getattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:471:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  471 |     if (!setattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:627:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  627 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:628:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  628 |     if (!getattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:633:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  633 |     if (!setattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:653:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  653 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:654:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  654 |     if (!getattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:737:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  737 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:738:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  738 |     if (!getattr(fd, &t)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:761:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  761 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:762:27: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  762 |     if (!setattr(fd, &r)) sys_fail_fptr(fptr);
+      |                           ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:804:31: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  804 |     if (!getwinsize(fd, &ws)) sys_fail_fptr(fptr);
+      |                               ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:851:31: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  851 |     if (!setwinsize(fd, &ws)) sys_fail_fptr(fptr);
+      |                               ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:924:10: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  924 |     fd = GetReadFD(fptr);
+      |          ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:926:32: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  926 |     if (tcflush(fd, TCIFLUSH)) sys_fail_fptr(fptr);
+      |                                ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:949:32: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  949 |     if (tcflush(fd, TCOFLUSH)) sys_fail_fptr(fptr);
+      |                                ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:973:11: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+  973 |     fd1 = GetReadFD(fptr);
+      |           ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:976:30: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  976 |         if (tcflush(fd1, TCIFLUSH)) sys_fail_fptr(fptr);
+      |                                     ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:977:30: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  977 |         if (tcflush(fd2, TCOFLUSH)) sys_fail_fptr(fptr);
+      |                                     ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:980:31: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  980 |         if (tcflush(fd1, TCIOFLUSH)) sys_fail_fptr(fptr);
+      |                                      ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:999:2: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+  999 |         sys_fail_fptr(fptr);
+      |         ^
+console.c:90:53: note: expanded from macro 'sys_fail_fptr'
+   90 | #define sys_fail_fptr(fptr) rb_sys_fail_str((fptr)->pathv)
+      |                                                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1244:14: warning: 'tied_io_for_writing' is deprecated: rb_io_get_write_io [-Wdeprecated-declarations]
+ 1244 |         wio = fptr->tied_io_for_writing;
+      |                     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:192:5: note: 'tied_io_for_writing' has been explicitly marked deprecated here
+  192 |     RBIMPL_ATTR_DEPRECATED(("rb_io_get_write_io"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1251:18: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+ 1251 |         if (write(fptr->fd, query->qstr, strlen(query->qstr)) != -1) {
+      |                         ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1254:12: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+ 1254 |         if (fptr->fd == 0 &&
+      |                   ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1464:37: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
+ 1464 |             (!(fptr = RFILE(con)->fptr) || GetReadFD(fptr) == -1)) {
+      |                                            ^
+console.c:278:34: note: expanded from macro 'GetReadFD'
+  278 | #define GetReadFD(fptr) ((fptr)->fd)
+      |                                  ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:153:5: note: 'fd' has been explicitly marked deprecated here
+  153 |     RBIMPL_ATTR_DEPRECATED(("rb_io_descriptor"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1517:8: warning: 'pathv' is deprecated: rb_io_path [-Wdeprecated-declarations]
+ 1517 |         fptr->pathv = rb_obj_freeze(rb_str_new2(CONSOLE_DEVICE));
+      |               ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:169:5: note: 'pathv' has been explicitly marked deprecated here
+  169 |     RBIMPL_ATTR_DEPRECATED(("rb_io_path"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+console.c:1524:8: warning: 'mode' is deprecated: rb_io_mode [-Wdeprecated-declarations]
+ 1524 |         fptr->mode |= FMODE_SYNC;
+      |               ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/io.h:157:5: note: 'mode' has been explicitly marked deprecated here
+  157 |     RBIMPL_ATTR_DEPRECATED(("rb_io_mode"))
+      |     ^
+/Users/gojoego/.rbenv/versions/3.3.4/include/ruby-3.3.0/ruby/internal/attr/deprecated.h:36:53: note: expanded from macro 'RBIMPL_ATTR_DEPRECATED'
+   36 | # define RBIMPL_ATTR_DEPRECATED(msg) __attribute__((__deprecated__ msg))
+      |                                                     ^
+36 warnings generated.
+linking shared-object io/console.bundle
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20250918-4474-zksnf3/io
+
+current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 clean
