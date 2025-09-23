@@ -7,10 +7,10 @@ checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
 creating Makefile
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 clean
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-fy9c0c sitelibdir\=./.gem.20250922-58980-fy9c0c clean
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-fy9c0c sitelibdir\=./.gem.20250922-58980-fy9c0c
 compiling console.c
 console.c:283:23: warning: 'tied_io_for_writing' is deprecated: rb_io_get_write_io [-Wdeprecated-declarations]
   283 |     VALUE wio = fptr->tied_io_for_writing;
@@ -424,8 +424,8 @@ console.c:1524:8: warning: 'mode' is deprecated: rb_io_mode [-Wdeprecated-declar
 linking shared-object io/console.bundle
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 install
-/usr/bin/install -c -m 0755 console.bundle ./.gem.20250918-4474-zksnf3/io
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-fy9c0c sitelibdir\=./.gem.20250922-58980-fy9c0c install
+/usr/bin/install -c -m 0755 console.bundle ./.gem.20250922-58980-fy9c0c/io
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/io-console-0.5.11/ext/io/console
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-zksnf3 sitelibdir\=./.gem.20250918-4474-zksnf3 clean
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-fy9c0c sitelibdir\=./.gem.20250922-58980-fy9c0c clean

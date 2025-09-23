@@ -1,4 +1,17 @@
 require_relative "boot"
+# config/application.rb
+require_relative "boot"
+
+require "logger"   # <-- add this line for Ruby 3.3
+require "rails/all"
+
+Bundler.require(*Rails.groups)
+
+module EmailEncouragements
+  class Application < Rails::Application
+    config.load_defaults 7.0
+  end
+end
 
 require "rails/all"
 

@@ -1,10 +1,10 @@
+# config/routes.rb
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/mail", as: "dev_mail"
+  end
 
-  # If you have a dedicated config/environments/staging.rb
-  mount LetterOpenerWeb::Engine, at: "/mail"
-
-  # Defines the root path route ("/")
   root "root#index"
   post "/", to: "root#create"
 end
+

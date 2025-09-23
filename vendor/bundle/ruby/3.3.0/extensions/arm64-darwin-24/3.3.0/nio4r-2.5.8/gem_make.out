@@ -13,10 +13,10 @@ checking for sys/resource.h... yes
 creating Makefile
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/nio4r-2.5.8/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-yv1e9w sitelibdir\=./.gem.20250918-4474-yv1e9w clean
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-ic6vwy sitelibdir\=./.gem.20250922-58980-ic6vwy clean
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/nio4r-2.5.8/ext/nio4r
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-yv1e9w sitelibdir\=./.gem.20250918-4474-yv1e9w
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-ic6vwy sitelibdir\=./.gem.20250922-58980-ic6vwy
 compiling bytebuffer.c
 bytebuffer.c:296:23: warning: 'fd' is deprecated: rb_io_descriptor [-Wdeprecated-declarations]
   296 |     bytes_read = read(FPTR_TO_FD(fptr), buffer->buffer + buffer->position, nbytes);

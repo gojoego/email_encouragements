@@ -3,16 +3,16 @@ current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ru
 creating Makefile
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-jlp8wx sitelibdir\=./.gem.20250918-4474-jlp8wx clean
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-7qrmdk sitelibdir\=./.gem.20250922-58980-7qrmdk clean
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-jlp8wx sitelibdir\=./.gem.20250918-4474-jlp8wx
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-7qrmdk sitelibdir\=./.gem.20250922-58980-7qrmdk
 compiling bootsnap.c
 linking shared-object bootsnap/bootsnap.bundle
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-jlp8wx sitelibdir\=./.gem.20250918-4474-jlp8wx install
-/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20250918-4474-jlp8wx/bootsnap
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-7qrmdk sitelibdir\=./.gem.20250922-58980-7qrmdk install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20250922-58980-7qrmdk/bootsnap
 
 current directory: /Users/gojoego/Projects/email-encouragements/vendor/bundle/ruby/3.3.0/gems/bootsnap-1.13.0/ext/bootsnap
-make DESTDIR\= sitearchdir\=./.gem.20250918-4474-jlp8wx sitelibdir\=./.gem.20250918-4474-jlp8wx clean
+make DESTDIR\= sitearchdir\=./.gem.20250922-58980-7qrmdk sitelibdir\=./.gem.20250922-58980-7qrmdk clean
