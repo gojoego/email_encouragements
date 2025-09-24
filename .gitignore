@@ -1,15 +1,54 @@
-# Rails
+# Logs and temp files
 /log/*
+!/log/.keep
 /tmp/*
-/storage/*
-/public/assets/*
-/node_modules/
-/.bundle/
-/vendor/bundle
-.byebug_history
-.DS_Store
+!/tmp/.keep
 
-# Credentials
-config/master.key
+# SQLite database
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/db/*.sqlite3-*
+
+# Uploaded files and local storage
+/storage/*
+!/storage/.keep
+
+# Rails cache, PID, and state
+/tmp/pids/*
+/tmp/cache/*
+/tmp/sockets/*
+/tmp/storage/*
+
+# Vendor bundle (for local installs)
+vendor/bundle
+
+# System and IDE files
+.DS_Store
+**/.DS_Store
+__MACOSX/
+
+# Editor/IDE junk
+*.swp
+*.swo
+*.bak
+*.orig
+.idea/
+.vscode/
+.project
+*.tmproj
+
+# Secrets (if used)
 .env
 .env.*
+
+# Byebug, Pry, etc.
+.byebug_history
+.pry_history
+
+# Coverage reports
+/coverage/
+/spec/reports/
+
+# Node/npm 
+/node_modules/
+yarn-error.log
