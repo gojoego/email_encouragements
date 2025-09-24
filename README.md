@@ -48,69 +48,38 @@ sudo apt install -y build-essential libsqlite3-dev zlib1g-dev libreadline-dev li
 ---
 
 ## Quick Start (Local)
+# 0) Clone
+git clone <repo-url>
+cd email-encouragements
 
-1. **Choose/Install the Ruby version**
+# 1) Ruby version
+rbenv install "$(cat .ruby-version)" -s
+rbenv local "$(cat .ruby-version)"
+ruby -v
 
-   ```bash
-   # Use the version in .ruby-version (create/update it if needed)
-   cat .ruby-version || echo "<your-ruby-version>"
+# 2) Bundler
+grep -A1 "BUNDLED WITH" Gemfile.lock || true
+# If a version is shown, install that exact version; otherwise install latest:
+# gem install bundler -v <version>
+gem install bundler
 
-   # Install and activate
-   rbenv install $(cat .ruby-version) # if not already installed
-   rbenv local $(cat .ruby-version)
-   ruby -v
-   ```
+# 3) Install gems (add local platforms if lockfile came from another OS)
+bundle lock --add-platform ruby || true
+bundle lock --add-platform arm64-darwin-23 || true   # Apple Silicon
+bundle config set --local force_ruby_platform true
+bundle install
 
-2. **Install Bundler** (match the lockfile if present)
+# 4) Environment variables (optional for local mail)
+cp .env.example .env 2>/dev/null || true
+# then edit .env with your SMTP creds if you want to test sending mail
 
-   ```bash
-   # See the Bundler version the repo was locked with (if any)
-   grep -A 1 "BUNDLED WITH" Gemfile.lock || true
-   # If a version shows (e.g., 2.4.22), install that exact version:
-   gem install bundler -v <version>
-   # Otherwise, install latest bundler
-   gem install bundler
-   bundler -v
-   ```
+# 5) Database (SQLite)
+bin/rails db:prepare    # create + migrate (uses config/database.yml)
 
-3. **Install gems**
+# 6) Run the app
+bin/rails s
+# Visit http://localhost:3000
 
-   ```bash
-   # If the lockfile was generated on Linux or another OS, add your platform(s)
-   bundle lock --add-platform ruby
-   # Apple Silicon (Sonoma+). For Intel Macs, use x86_64-darwin-23
-   bundle lock --add-platform arm64-darwin-23 || true
-
-   # Prefer building native gems from source on macOS
-   bundle config set --local force_ruby_platform true
-
-   bundle install
-   ```
-
-4. **Database setup (SQLite)**
-
-   ```bash
-   bin/rails db:prepare   # creates & migrates
-   ```
-
-5. **Run the app**
-
-   ```bash
-   bin/rails s
-   # Visit http://localhost:3000
-   ```
-
----
-
-## Environment Variables
-
-List any required env vars here. Example:
-
-```bash
-# .env (if using dotenv-rails)
-SMTP_USERNAME=
-SMTP_PASSWORD=
-```
 
 Describe how to obtain secrets (e.g., from 1Password, team vault, or create test creds).
 
@@ -207,16 +176,20 @@ bin/rails db:migrate
 bin/rails db:seed
 bin/rails console
 bin/rails routes
-rubocop -A            # if rubocop is configured
 ```
 
 ---
 
-## Project Structure (excerpt)
+## Project Structure 
 
-```
 app/
+  assets/
+  channels/
   controllers/
+  helpers/  
+  javascript/
+  jobs/
+  mailers/
   models/
   views/
 config/
@@ -226,20 +199,5 @@ db/
   migrate/
 Gemfile
 Gemfile.lock
-```
 
-Add or update this tree to match the repository.
 
----
-
-## Contributing
-
-* Create a feature branch
-* Open a PR with a clear description and screenshots if UI changes
-* Ensure tests pass and lints are clean
-
----
-
-## License
-
-Add your license (MIT, Apache-2.0, etc.) here.
